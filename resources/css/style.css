@@ -1,0 +1,270 @@
+/*Universal style*/
+html{
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+  flex: auto;
+}
+
+/*Company Header*/
+.company{
+  background-color: black;
+  width: 100%;
+  height: 2.32rem;
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+}
+
+.company img{
+  height: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+
+.company span{
+  font-family: Helvetica;
+  font-size: 1rem;
+  color: white;
+  display: inline-block;
+}
+
+/*Background banner*/
+.main-banner{
+  background-image: url(../images/moto.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25rem;
+}
+
+/*Headline section*/
+.headline{
+  background-color: black;
+  position: relative;
+  width: 20rem;
+  top: 9rem;
+  padding: 2rem 3rem;
+}
+
+.headline h4{
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: Helvetica;
+  color: white;
+  padding-bottom: 0.75rem;
+}
+
+.headline h2{
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Helvetica;
+  color: white;
+}
+
+/*Menu section*/
+.menu{
+  background-color: firebrick;
+  height: 2.25rem;
+  width: 100%;
+  padding: 0.75rem 0.75rem;
+}
+
+.nav a{
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: white;
+  padding: 0.75rem 0.75rem;
+  text-decoration: none;
+  font-family: Helvetica;
+}
+
+.container .nav{
+  display: flex;
+  align-items: center;
+}
+
+/*Product Section*/
+.sas-content .container{
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0rem;
+}
+
+.sas-item{
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  border: 4px solid black;
+}
+
+.sas-item img{
+  height: 9rem;
+  padding: 2rem 4rem;
+}
+
+.sas-item span{
+  width: 100%;
+  padding: 0.5rem 0rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+/*Contact section*/
+.location .container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.info{
+  width: 35%;
+}
+
+.info h4{
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+/*Footer section*/
+.footer{
+  height: 5rem;
+  width: 100%;
+  background-color: black;
+}
+
+.footer h5{
+  color: white;
+  padding: 2rem 0rem;
+  font-family: Helvetica;
+}
+
+/*Breakpoints for tablet and mobile devices*/
+
+/*Desktop display*/
+@media only screen and (min-width: 1024px) {
+    .nav p{
+    display: none;
+  }
+}
+
+/*Tablet display*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav span{
+    display: none;
+  }
+
+  .nav p{
+    margin: 0 auto;
+    text-align: center;
+    display: inherit;
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-family: Helvetica;
+    color: white;
+    padding: 0.75rem 0.75rem;
+  }
+
+  .sas-item{
+    width: 47%;
+  }
+
+  #glasses{
+    display: none;
+  }
+
+  .info {
+    width: 35%;
+  }
+}
+
+/*Mobile display*/
+@media only screen and (min-width: 320px ) and (max-width: 768px){
+  .company span{
+    display: none;
+  }
+
+  .company img{
+    height: 1.5rem;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .main-banner{
+    height: 15rem;
+  }
+
+  .headline{
+    top: 10rem;
+    padding: 1rem 2rem;
+  }
+
+  .headline h4{
+    font-family: Helvetica;
+    font-size: 0.77rem;
+    font-weight: bold;
+  }
+
+  .headline h2{
+    font-family: Helvetica;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .nav span{
+    display: none;
+  }
+
+  .nav p{
+    margin: 0 auto;
+    text-align: center;
+    display: inherit;
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: Helvetica;
+    color: white;
+    padding: 0.75rem 0.75rem;
+  }
+
+  #glasses, #watch{
+    display: none;
+  }
+
+  .sas-item{
+    width: 90%;
+    margin: 1.5rem 1.5rem;
+  }
+
+  .sas-item img{
+    padding: 2rem 4rem;
+  }
+
+  .location .container{
+    width: 90%;
+    display: block;
+    float: none;
+  }
+
+  .info{
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .info span{
+    margin-bottom: 0.5rem;
+    font-family: Helvetica;
+    font-size: 1rem;
+  }
+
+  .footer h5{
+    text-align: center;
+  }
+}
